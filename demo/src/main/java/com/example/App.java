@@ -28,6 +28,5 @@ public class App
         //Create Scanner object
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a command: ");
-    
     }
 }
