@@ -20,13 +20,13 @@ public class App
         while (true){
             //display the current value of the calculator
             String formattedA = String.format("%.3f", valueA);
-            String formattedB = String.format("3.%f", valueB);
+            String formattedB = String.format("%.3f", valueB);
 
             System.out.println("---------------------------------------------------");
             System.out.println("Chavvi Calc");
             System.out.println("---------------------------------------------------");
             // declare A and B as a variable
-            System.out.println("A = " + formattedA + "B = " + formattedB);
+            System.out.println("A = " + formattedA + "         B = " + formattedB);
             System.out.println("---------------------------------------------------");
             System.out.println("a       Enter a value for A");
             System.out.println("b       Enter a value for B");
@@ -37,7 +37,16 @@ public class App
             System.out.println("c       Clear");
             System.out.println("q       Quit");
             System.out.println("---------------------------------------------------");
+            System.out.print("Enter a command: ");
 
+            String input = scanner.nextLine();
+            String trimmedInput = input.trim();
+            String command = trimmedInput.toLowerCase();
+
+            switch (command) {
+                case "a":
+                    System.out.print("Enter value for A: ");
+            }
         }
             
         // //create Scanner object
