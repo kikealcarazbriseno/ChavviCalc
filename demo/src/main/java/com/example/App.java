@@ -40,15 +40,12 @@ public class App {
             System.out.println("---------------------------------------------------");
             System.out.print("Enter a command: ");
 
-            // String input = scanner.nextLine();
-            //String trimmedInput = input.trim();
-            //String command = trimmedInput.toLowerCase();
-
             char operator = scanner.next().charAt(0); 
             
             switch(operator) {
                 case 'a':
                     System.out.print("Enter a number: ");
+
                     try {
                         valueA = scanner.nextDouble();
                     } catch (Exception e) {
@@ -91,7 +88,7 @@ public class App {
                     System.out.print("Thank you for using Chavvi's Calculator!");
                     break;  
                 default:
-                    System.out.println("Error");
+                    System.out.println("Error, please enter a command from the menu above.");
             }
             valueA = result;
         }
